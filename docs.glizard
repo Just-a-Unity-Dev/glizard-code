@@ -1,0 +1,68 @@
+If you are reading this, you want to know GlizardCode. Here are the docs
+
+write(argument : string)
+
+Writes text to the console
+
+Alternatives
+
+write(1+5) | EVAL
+write(mem[0]) | Print from memory
+
+
+
+
+writeToMem(argument)
+
+writes the specific argument to the memory
+
+
+
+
+disposeFromMem(argument (must be copied from memory))
+
+removes the specified variable/memory string
+
+
+
+
+COMMENTS
+You can create comments with
+$
+
+
+
+
+ERROR CODES
+if you are reading this part, your code has an error. lets go over it
+
+Error GC0001 | Unable to remove {dispose} from memory because {dispose} does not exist!
+You cannot remove something from memory, since it isn't defined.
+
+CAUSES:
+Forgetting to add that memory string
+
+Overshooting the memory array
+$ memory 0 \/
+writeToMem('hey!')
+write(mem[1])
+
+
+Error GC0002 | Unable to write {x} because {x} is invalid.
+Self explanatory, the text cannot be written.
+
+Causes
+
+Forgetting to add '' when writing a string
+writeFromMem(hey)
+$ error       ^
+
+Leaving the write area blank
+writeFromMem()
+$ error     ^
+
+
+
+Error GC 0003 | Unexpected Error Occurred
+
+This means that you input an invalid command, or something else went wrong.
