@@ -8,6 +8,11 @@ Basically, a simple programming language.
 ## how 2 download????
 
 ### For the interpreter
+
+Download Python 3.8.3
+Download the files
+Run glizardCode.py
+
 Click on releases.
 Download the latest (or oldest) version.
 
