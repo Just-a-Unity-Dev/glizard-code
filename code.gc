@@ -1,1 +1,2 @@
-hey
+$ This is a comment
+write('Hello world!')
