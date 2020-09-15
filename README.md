@@ -1,5 +1,5 @@
-# Glizard Code
 [![Run on Repl.it](https://repl.it/badge/github/Just-a-Unity-Dev/glizard-code)](https://repl.it/github/Just-a-Unity-Dev/glizard-code)
+# Glizard Code
 A simple open-source language, made with python.. and really basic.
 
 
