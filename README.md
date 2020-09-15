@@ -25,3 +25,11 @@ Edit all you want!
 1. Edit the read.glizard and change it to whatever file you want to run (must end in .gc)
 2. Open your file with the GCInterpreter
 3. Have fun
+
+## Troubleshooting
+So you may experience some errors running the interpreter, here are some common ones.
+### Check your `read.glizard`
+Most errors occur because a line break, breaks the code. You can remove the second or third line.
+
+### Don't modify the `glizardCode.py` without knowing Python
+Most errors are caused because ~~n00b~~ beginner coders mess up the code, simple solution. Don't.
