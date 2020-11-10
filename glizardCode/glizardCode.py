@@ -1,3 +1,5 @@
+from rich import print
+
 # This is the interpeter for any .gc files
 
 # Read's the glizard file, which opens code.gc
@@ -8,15 +10,6 @@ fName = f.read()
 mem = []
 
 def main():
-    class bcolors:
-        HEADER = '\033[95m'
-        OKBLUE = '\033[94m'
-        OKGREEN = '\033[92m'
-        WARNING = '\033[93m'
-        FAIL = '\033[91m'
-        ENDC = '\033[0m'
-        BOLD = '\033[1m'
-        UNDERLINE = '\033[4m'
 
     # Defined Glizard Code commands
 
@@ -44,7 +37,7 @@ def main():
         exec(compile(open(fileName, "rb").read(), fileName, 'exec'))
 
     def write(x):
-        print(f'{bcolors.ENDC}{x}')
+        print(f'{x}')
 
     # The Interpreter start's here
 
@@ -73,15 +66,15 @@ def main():
                     y = x[x.find("(") + 1:x.find(")")]
                     if "'" in y:
                         z = x[x.find("('") + 2:x.find("')")]
-                        print(bcolors.ENDC + z)
+                        print(z)
                     elif "'" not in y:
                         z = eval(y)
-                        print(bcolors.ENDC + z)
+                        print(z)
                     else:
                         z = x[x.find("([") + 2:x.find("])")]
                         print(mem[z])
                 except:
-                    print(f'{bcolors.FAIL}Error GC0002 | Unable to write text')
+                    print(f'[bold red]Error GC0002 | Unable to write text[/bold red]')
                     x = input()
                     exit()
             else:
